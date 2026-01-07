@@ -24,8 +24,8 @@ endif()
 
 AddProject(
   mc_h1
-  GITHUB_PRIVATE bastien-muraccioli/mc_h1
-  GIT_TAG origin/safe-rl-qp
+  GITHUB_PRIVATE Alhuuin/mc_h1
+  GIT_TAG origin/rl_controller
   DEPENDS mc_rtc
 )
 
@@ -41,7 +41,7 @@ AddProject(
   mc_unitree2
   GITHUB_PRIVATE bastien-muraccioli/mc_unitree2
   GIT_TAG origin/safe-rl-qp
-  CMAKE_ARGS -DGENERATE_H1_CONTROLLER=ON -DUNITREE_SDK2_SRC_DIR=${SOURCE_DIR}
+  CMAKE_ARGS -DGENERATE_H1_CONTROLLER=ON -DGENERATE_GO2_CONTROLLER=ON -DUNITREE_SDK2_SRC_DIR=${SOURCE_DIR}
                                          -DCMAKE_POLICY_VERSION_MINIMUM=3.5
   DEPENDS mc_rtc unitree_sdk2
 )
