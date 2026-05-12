@@ -1,5 +1,5 @@
 AddProject(mc_residual_estimation
-  GITHUB bastien-muraccioli/mc_residual_estimation
-  GIT_TAG origin/devel
+  GITHUB mathieu-celerier/mc_residual_estimation
+  GIT_TAG topic/HumanoidResidual_new_implementation
   DEPENDS mc_rtc
 )
