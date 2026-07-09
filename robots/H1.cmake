@@ -24,8 +24,8 @@ endif()
 
 AddProject(
   mc_h1
-  GITHUB_PRIVATE bastien-muraccioli/mc_h1
-  GIT_TAG origin/safe-rl-qp
+  GITHUB_PRIVATE Alhuuin/mc_h1
+  GIT_TAG origin/rl_controller
   DEPENDS mc_rtc
 )
 
