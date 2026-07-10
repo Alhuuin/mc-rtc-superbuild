@@ -185,7 +185,10 @@ function(CreateCatkinWorkspace)
     set(BUILD_COMMAND
         ${CMAKE_COMMAND} -E chdir ${DIR} ${COMMAND_PREFIX} colcon build --merge-install
         --executor sequential --cmake-args -DCMAKE_BUILD_TYPE=$<CONFIG>
-        -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON ${CC_WORKSPACE_ARGS_CATKIN_BUILD_ARGS}
+        -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON
+        -DPython3_EXECUTABLE=/usr/bin/python3
+        -DPYTHON_EXECUTABLE=/usr/bin/python3
+        ${CC_WORKSPACE_ARGS_CATKIN_BUILD_ARGS}
     )
   endif()
   set(STAMP_FILE "${STAMP_DIR}/${ID}.stamp")

@@ -20,3 +20,10 @@ AddProject(
   GIT_TAG origin/master
   DEPENDS hrp5_p_description mc_rtc
 )
+
+AddProject(
+  hrp5p_mj_description
+  GITHUB_PRIVATE bastien-muraccioli/hrp5p_mj_description
+  GIT_TAG origin/main
+  DEPENDS hrp5_p_description mc_rtc
+)
