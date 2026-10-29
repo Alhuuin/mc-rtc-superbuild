@@ -6,14 +6,14 @@ endif()
 
 AddCatkinProject(
   go2_description
-  GITHUB isri-aist/go2_description
+  GITHUB_PRIVATE isri-aist/go2_description
   GIT_TAG origin/master
   WORKSPACE data_ws
 )
 
 AddProject(
   mc_go2
-  GITHUB isri-aist/mc_go2
+  GITHUB_PRIVATE isri-aist/mc_go2
   GIT_TAG origin/main
   DEPENDS go2_description mc_rtc
 )
